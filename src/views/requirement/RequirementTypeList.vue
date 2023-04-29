@@ -67,7 +67,7 @@
             v-model="addRequirementTypeDialog.dialogVisible"
             :title="addRequirementTypeDialog.type === 'EDIT' ? '修改需求类型' : '添加需求类型'"
             width="30%">
-        <div>
+        <div style="margin-right: 20px;">
             <el-form :model="addRequirementTypeDialog.form" label-width="120px">
                 <el-form-item label="需求类型名称">
                     <el-input v-model="addRequirementTypeDialog.form.requirementTypeName"/>

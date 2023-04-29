@@ -68,7 +68,7 @@
             v-model="addSystemApplicationDialog.dialogVisible"
             :title="addSystemApplicationDialog.type === 'EDIT' ? '修改系统' : '添加系统'"
             width="30%">
-        <div>
+        <div style="margin-right: 20px;">
             <el-form :model="addSystemApplicationDialog.form" label-width="120px">
                 <el-form-item label="系统名称">
                     <el-input v-model="addSystemApplicationDialog.form.applicationSystemName"/>

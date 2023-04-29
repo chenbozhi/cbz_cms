@@ -6,12 +6,14 @@ import http from "./http.js";
 
 export default {
 
+    /* ******************************************测试需求************************************************ */
+
     // 分页查询需求列表
     qryRequirements(data) {
         return http.post('/requirement/qryRequirements', data)
     },
 
-    /* *************************系统应用************************************************ */
+    /* ******************************************系统应用************************************************ */
     // 分页查询系统列表
     qryApplicationSystems(data) {
         return http.post('/applicationSystem/qryApplicationSystems', data)
@@ -32,7 +34,7 @@ export default {
         return http.post('/applicationSystem/updateApplicationSystem', data)
     },
 
-    /* *************************需求类型************************************************ */
+    /* ******************************************需求类型************************************************ */
     // 分页查询需求类型列表
     qryRequirementTypes(data) {
         return http.post('/requirementType/qryRequirementTypes', data)
@@ -53,9 +55,24 @@ export default {
         return http.post('/requirementType/updateRequirementType', data)
     },
 
-    /* *************************需求部门************************************************ */
+    /* ******************************************需求部门************************************************ */
     // 查询部门树结构
     qryDepartmentsTree(data) {
         return http.post('/department/qryDepartments', data)
+    },
+
+    // 添加需求类型
+    addDepartment(data) {
+        return http.post('/department/addDepartment', data)
+    },
+
+    // 删除需求类型
+    deleteDepartment(data) {
+        return http.post('/department/deleteDepartment', data)
+    },
+
+    // 修改需求类型
+    updateDepartment(data) {
+        return http.post('/department/updateDepartment', data)
     },
 }
